@@ -1,0 +1,42 @@
+header {
+  color: white;
+  background-color: black;
+  height: 50px;
+  text-align: right;
+  padding: 0 20px;
+  position: relative;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 50px;
+  position: absolute;
+  left: 20px;
+}
+
+header nav {
+  display: inline-block;
+  text-align: right;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav li :nth-child(n+1) {
+  margin-left: 10px;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+header nav li a:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=header.css.map */

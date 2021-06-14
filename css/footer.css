@@ -1,0 +1,50 @@
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer-top {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-top nav {
+  display: inline-block;
+  text-align: right;
+}
+
+footer .footer-top nav li {
+  display: inline-block;
+}
+
+footer .footer-top nav li :nth-child(n+1) {
+  margin-left: 10px;
+}
+
+footer .footer-top nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+footer .footer-top nav li a:hover {
+  opacity: 0.7;
+}
+
+footer p {
+  padding-top: 20px;
+  color: white;
+  font-size: 15px;
+}
+/*# sourceMappingURL=footer.css.map */
