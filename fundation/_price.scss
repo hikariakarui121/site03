@@ -36,8 +36,12 @@
 
         img{
           max-width: 500px;
-          width: 100%;
+          width: 95%;
           height: auto;
+
+          @include smallTab{
+            width: 100%;
+          }
         }
   
       } //contents
@@ -66,9 +70,9 @@
 
           h3{
             font-size: 20px; 
-            padding-right: 30px;
             line-height: 50px;
             width: 300px;
+            text-align: left;
 
             @include smallTab{
              font-size: 30px; 
@@ -78,6 +82,7 @@
           p{
             font-size: 18px; 
             
+
             @include smallTab{
               font-size: 25px;
              }
