@@ -1,0 +1,151 @@
+#header-top{
+position: fixed;  
+width: 100%;
+z-index: 100;
+
+  .h-inner{
+    color:white;
+    background-color: black;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+  
+  
+    h1{
+      display: inline-block;
+      font-size: 18px;
+      line-height: 80px;
+
+      @include smallTab{
+        font-size: 30px;
+      }
+    }
+  
+    nav{
+      
+      position: fixed;
+      top: 80px;
+      left:0;
+      width: 100%;
+      background-color:rgba(#000,0.7);
+    
+
+      @include  OverTab{
+        position: static;
+        width: initial;
+        background-color: transparent;
+
+        display:flex;
+        padding-right: 150px;
+      }
+      
+      li{
+        display: inline-block;
+  
+        & :nth-child(n+1){
+          margin-left: 10px;
+        }
+  
+        a{
+          color:white;
+          text-decoration: none;
+          display: block;
+          font-size: 18px;
+          line-height: 80px;
+  
+          &:hover{
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    // ハンバーグボタン
+    .h-button{
+      position: relative;
+      width: 30px;
+      height: 30px;
+
+      span{
+        background-color: #fff;
+        height: 2px;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top:0;
+        bottom:0;
+        margin: auto;
+      }
+    }
+
+
+
+    // 問い合わせボタン
+    .i-button{
+      position: absolute;
+      right:20px;
+      top:50%;
+      transform: translateY(-50%);
+      border-radius: 12px;
+
+      a{
+        display: block;
+        font-weight: bold;
+        color:#000;
+        // background-color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 1px;
+
+        @include smallTab{
+          font-size: 20px;
+          padding:4px;
+
+        }
+      }
+
+    }
+
+
+  }
+}
+
+
+#c_copy{
+
+  background:url("./image/top01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  
+  @include smallTab{
+    height: 500px;
+  }
+
+  & div{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  h2{
+    color: white;
+    text-shadow: -3px -1px black;
+   font-size: 22px;
+    width: 100%;
+
+    @include smallTab{
+      font-size: 28px;
+    }
+  }
+}

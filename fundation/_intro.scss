@@ -1,0 +1,39 @@
+// 自己紹介
+.intro{
+  text-align: center;
+  background-color:#EEEEEE;
+  
+  .title{
+    padding-top:60px;
+    padding-bottom:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+
+    h2{
+
+    }
+
+    p{
+      padding-bottom: 20px;
+    }
+
+    img{
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  .contents{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 60px;
+
+    p{
+      font-size:20px;
+      line-height: 30px;
+    }
+  }
+
+}

@@ -1,0 +1,102 @@
+    
+// 実績紹介
+#works{
+  text-align: center;
+  padding-bottom:60px;
+  background-color:#EEEEEE;
+
+  .title{
+    padding-top:60px;
+    padding-bottom:60px;
+    line-height: 1.5;
+
+    h2{
+
+    }
+
+    p{
+
+
+    }
+
+  }
+  
+  .rec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+
+   
+    .rec-item {
+      display: flex;
+      flex-flow: column-reverse;
+      background-color: #000;
+      border-radius: 8px;
+      max-width:400px;
+      width: 100%;
+      margin-top: 30px;
+
+      
+        & + .rec-item{
+
+          @include OverTab{
+            margin-left: 30px;
+
+          }
+
+          
+        }
+
+        .text{
+
+          color: #EEEEEE;
+          text-align: center;
+      
+          .sub_title{
+           font-size: 16px;
+           font-weight: bold;
+           line-height: 30px;
+
+           
+          }
+
+
+        }
+
+        .image{
+         
+          &:hover{
+          
+            opacity :0.5;
+          }
+
+          img{
+            
+            max-width:400px;
+            width: 100%;
+            height: auto;
+          }
+        }
+
+    } //rec-item
+  } // rec
+} // service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

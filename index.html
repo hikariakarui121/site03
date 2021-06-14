@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ファビコン -->
+  <link rel="shortcut icon" type="image/x-icon" href="./image/favicon001.ico" />
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <title>Mitsu's Portfolio | 事業制作サイト</title>
 </head>
 
 <body>
   <header>
-    <h1>MITSU' s Portforfolio</h1>
-    
-    <nav>
-      <ul>
-        <li><a href="#">ホーム</a></li>
-        <li><a href="#">自己紹介</a></li>
-        <li><a href="#">サービス</a></li>
-        <li><a href="#">実績</a></li>
-        <li><a href="#">価格表</a></li>
-        <li><a href="#">制作の流れ</a></li>
-        <li><a href="#">問い合わせ</a></li>
-      </ul>
-    </nav>
 
+    <section id ="header-top">
+      <div class="h-inner">
+            
+            <h1>MITSU' s Portforfolio</h1>
+            
 
-  </header>
+            <nav>
+              <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">自己紹介</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">実績</a></li>
+                <li><a href="#">価格表</a></li>
+                <li><a href="#">制作の流れ</a></li>
+              </ul>
+            </nav>
 
+            <button class="h-buttun">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
 
-  <main>
-    <section class="c_copy">
-      <h2>Webサイト構築・LP制作でお困りではありませんか？</h2>
+            <button class="i-button"><a href="#">問い合わせ</a></button>
+
+          </div>
     </section>
 
+    <!-- トップ部分 -->
+    <section id="c_copy">
+      <div>
+        <h2>Webサイト構築・LP制作でお困りではありませんか？</h2>
+      </div>
+    </section>
 
+  </header>
+    
+  <main>
+
+    <!-- 自己紹介 -->
     <section class="intro">
       <div class="title">
         <h2>Introduction</h2>
         <p>-自己紹介-</p>
+        <img src="image/image001.jpeg" alt="">
       </div>
 
-      <div class="intro_title contents">
+      <div class="contents">
         <p>
           初めまして、WebエンジニアのMITSUAKIと申します。<br>
           現在フロントエンドを中心に、Webサイト制作およびWebアプリケーションの開発を行なっております。<br>
@@ -54,14 +73,17 @@
       </div>
     </section>
 
-    <section class="service">
+
+        <!-- サービス -->
+    <section id="service">
+
       <div class="title">
         <h2>Service</h2>
         <p>-サービス-</p>
       </div>
 
-      <!-- 一つ目 -->
       <div class="rec">
+        <!-- 一つ目 -->
         <div class="rec-item">
           <div class="text">
               <div class="sub_title">サイト制作</div>
@@ -72,83 +94,141 @@
               </div>
           </div>
           <div class="image">
-              <img src="./image/contents01.jpg" alt="サイト制作画像">
+              <img src="./image/contents.jpg" alt="サイト制作画像">
           </div>
-      </div>
+        </div>
 
-    <!-- ふたつ目 -->
-      <div class="rec-item">
-        <div class="text">
-            <div class="sub_title">SNSサポート</div>
-            <div class="discription">
-              SNS広告代理店にて培ったスキルにてお手伝いいたします。<br>
-              データ分析やショップ機能の代行を行います<br>
-              単発〜定期的なアドバイスなどリーズナブルに対応いたします。
-            </div>
+        <!-- ふたつ目 -->
+        <div class="rec-item">
+          <div class="text">
+              <div class="sub_title">SNSサポート</div>
+              <div class="discription">
+                SNS広告代理店にて培ったスキルにてお手伝いいたします。<br>
+                データ分析やショップ機能の代行を行います<br>
+                単発〜定期的なアドバイスなどリーズナブルに対応いたします。
+              </div>
+          </div>
+          <div class="image">
+              <img src="./image/SNS.jpg" alt="">
+          </div>
         </div>
-        <div class="image">
-            <img src="./image/SNS.jpg" alt="">
-        </div>
-    </div>
 
-      <div class="rec-item">
-        <div class="text">
-            <div class="sub_title">サポート対応</div>
-            <div class="discription">
-              ご不明点やご不安点はいつでもご相談ください。<br>
-              お客様が納得感をもてるようにサポートいたします。<br>
-              サポートの仕方などもご相談可能です。
-            </div>
+        <!-- みっつ目 -->
+        <div class="rec-item">
+          <div class="text">
+              <div class="sub_title">サポート対応</div>
+              <div class="discription">
+                ご不明点やご不安点はいつでもご相談ください。<br>
+                お客様が納得感をもてるようにサポートいたします。<br>
+                サポートの仕方などもご相談可能です。
+              </div>
+          </div>
+          <div class="image">
+              <img src="./image/phone.jpg" alt="">
+          </div>
         </div>
-        <div class="image">
-            <img src="./image/phone.jpg" alt="">
-        </div>
-    </div>
-  </div>
+    
+     </div>
     </section>
 
     <!-- 実績と制作物 -->
-    <section class="works">
+    <section id="works">
       <div class="title">
         <h2>Works</h2>
         <p>-実績/作成物-</p>
       </div>
+
+      <div class="rec">
+      
+        <!-- ふたつ目 -->
+        <div class="rec-item">
+         
+            <div class="text">
+              <div class="sub_title">サンプルサイト①
+              ※デザインデータより作成</div>
+            </div>
+            <div class="image">
+              <a href="https://hikariakarui121.github.io/site02/">
+                <img src="./image/contents01.jpg" alt="">
+              </a>
+            </div>
+        </div>
+
+        <!-- みっつ目 -->
+        <div class="rec-item">
+        
+            <div class="text">
+              <div class="sub_title">サンプルサイト②
+                ※デザインデータより作成</div>
+            </div>
+            <div class="image">
+              <a href="https://hikariakarui121.github.io/site01/">
+                <img src="./image/contents02.jpg" alt="">
+              </a>
+            </div>
+        </div>
+
+      
+        <div class="rec-item">
+          
+            <div class="text">
+              <div class="sub_title">オリジナルサイト</div>
+            
+          </div>
+          <div class="image">
+            <a href="https://hikariakarui121.github.io/site03/">
+              <img src="./image/contents03.jpg" alt="サイト制作画像">
+            </a>
+          </div>
+        </div>
+    
+     </div>
+    </section>
     </section>
     
-    <section class="price">
+    <section id="price">
+
+      <div class="c-inner">
+
       <div class="title">
         <h2>price</h2>
         <p>-価格表-</p>
       </div>
 
       <div class="contents">
-        <div class="price-image">
-          <img src="./image/price.jpg" alt="価格イメージ">
+    
+          <div class="price-image">
+            <img src="./image/price.jpg" alt="価格イメージ">
+          </div>
+
+          <div class="price-contents">
+            <div class="price-item">
+              <h3>コーディング代行</h3>
+              <p>¥20,000-</p>
+            </div>
+            <div class="price-item">
+              <h3>LP制作</h3>
+              <p>¥50,000-</p>
+            </div>
+            <div class="price-item">
+              <h3>SNS運用サポート</h3>
+              <p>¥10,000-</p>
+            </div>
+            <div class="price-item">
+              <h3>その他</h3>
+              <p>-要相談-</p>
+            </div>
+            <div class="link">
+              <a href="#">無料相談/ご依頼など</a>
+            </div>
+          </div>
+          
         </div>
-        
-        <div class="price-contents">
-          <div class="price-item">
-            <h3>コーディング代行</h3>
-            <p>¥20,000-</p>
-          </div>
-          <div class="price-item">
-            <h3>LP制作</h3>
-            <p>¥50,000-</p>
-          </div>
-          <div class="price-item">
-            <h3>SNS運用サポート</h3>
-            <p>¥10,000-</p>
-          </div>
-          <div class="price-item">
-            <h3>その他</h3>
-            <p>-要相談-</p>
-          </div>
-          <div class="link">
-            <a href="#">無料相談/ご依頼など</a>
-          </div>
+
         </div>
+
         
-      </div>
+        
     </section>
     
     <!-- 制作の流れ -->
@@ -162,7 +242,10 @@
 
         <div class="flow-item">
           <h3>STEP1<br>お問い合わせ</h3>
-          <p>お問い合わせフォームよりご連絡ください。</p>
+          <div class="f-discription">
+            <p>お問い合わせフォームよりご連絡ください。</p>
+          </div>
+         
         </div>
         
         <div class="flow-item">
@@ -202,22 +285,20 @@
   <footer>
 
     <div class="footer-top">
-      <h1>MITSU' s Portforfolio</h1>
+      <h1><a href="#">MITSU' s Portforfolio</a></h1>
       <nav>
         <ul>
-          <li><a href="#">ホーム</a></li>
           <li><a href="#">自己紹介</a></li>
           <li><a href="#">サービス</a></li>
           <li><a href="#">価格表</a></li>
           <li><a href="#">実績</a></li>
           <li><a href="#">制作の流れ</a></li>
-          <li><a href="#">無料相談/問い合わせ</a></li>
         </ul>
       </nav>
     </div>
 
     <p><small>©︎2020 Mitsu's Portfolio</small></p>
   </footer>
-  
+  <script ref="./main.js"></script>
 </body>
 </html>

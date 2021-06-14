@@ -1,0 +1,117 @@
+@import './general';
+
+// 価格紹介
+#price{
+  text-align: center;
+  padding-bottom: 60px;
+
+  .c-inner{
+    max-width:1180px;
+    margin: 0 auto;
+
+
+    .title{
+      padding-top:60px;
+      padding-bottom:60px;
+      line-height: 1.5;
+    }
+  
+    .contents{
+      
+
+      @include OverTab{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+
+      }
+  
+      .price-image{
+
+        @include OverTab{
+          margin-right: 60px;
+        }
+
+        img{
+          max-width: 500px;
+          width: 100%;
+          height: auto;
+        }
+  
+      } //contents
+  
+      .price-contents{
+        flex:1;
+        padding-top: 20px;
+        @include OverTab{
+          padding-top: 0px;
+        }
+        
+        .price-item{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+           @include OverTab{
+          justify-content:space-between;
+          line-height: 2.5em;
+          padding-right: 20px;
+          padding-left: 20px;
+        
+         
+           }
+
+
+          h3{
+            font-size: 20px; 
+            padding-right: 30px;
+            line-height: 50px;
+            width: 300px;
+
+            @include smallTab{
+             font-size: 30px; 
+            }
+          }
+    
+          p{
+            font-size: 18px; 
+            
+            @include smallTab{
+              font-size: 25px;
+             }
+          }
+        }
+
+    
+        .link{
+          margin-top:30px;
+          display: inline-block;
+          
+          a{
+            display: block;
+            background-color: rgb(247, 176, 25);
+            border-radius: 40px;
+            padding:12px 18px ;
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+            font-size: 25px;
+    
+            &:hover{
+              opacity: 0.7;
+            }
+          }
+        }//link
+
+
+      }//price-contents
+
+    } //contents
+
+
+
+  }// c-inner
+ 
+} // price

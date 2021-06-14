@@ -1,0 +1,49 @@
+// フロー紹介
+.flow{
+  text-align: center;
+  background-color:#EEEEEE;
+  padding-bottom: 60px;
+
+
+  .title{
+    padding-top:60px;
+    padding-bottom:60px;
+    line-height: 1.5;
+  }
+
+  .flow-contents{
+    display: grid;
+    justify-content: center;
+    gap:20px 30px;
+    grid-template-columns: minmax(min-content,400px);
+
+    @include smallTab{
+      grid-template-columns: minmax(min-content,400px)minmax(min-content,400px);
+    }
+
+    @include OverTab{
+      grid-template-columns: minmax(min-content,400px)minmax(min-content,400px)minmax(min-content,400px)minmax(min-content,400px);
+    }
+
+  }
+  .flow-item{
+    text-align: center;
+    padding: 20px;
+
+    &:nth-child( n+1){
+      margin-right: 15px;
+    }
+
+    & h3{
+      font-size: 25px;
+      padding-bottom: 20px;
+      line-height: 1.5em;
+      text-align: center;
+      
+    }
+
+    .f-discription{
+      text-align: center;
+    }
+  }
+}
