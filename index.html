@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ファビコン -->
   <link rel="shortcut icon" type="image/x-icon" href="./image/favicon001.ico" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Mitsu's Portfolio | 事業制作サイト</title>
 </head>
 
@@ -24,11 +24,11 @@
 
             <nav id="nav">
               <ul>
-                <li><a href="#">自己紹介</a></li>
-                <li><a href="#">サービス</a></li>
-                <li><a href="#">実績</a></li>
-                <li><a href="#">価格表</a></li>
-                <li><a href="#">制作の流れ</a></li>
+                <li><a href="#intro">自己紹介</a></li>
+                <li><a href="#service">サービス</a></li>
+                <li><a href="#works">実績</a></li>
+                <li><a href="#price">価格表</a></li>
+                <li><a href="#flow">制作の流れ</a></li>
               </ul>
             </nav>
 
@@ -55,14 +55,14 @@
   <main>
 
     <!-- 自己紹介 -->
-    <section class="intro">
+    <section id="intro">
       <div class="title">
         <h2>Introduction</h2>
         <p>-自己紹介-</p>
         <img src="image/image001.jpeg" alt="">
       </div>
 
-      <div class="contents">
+      <div class="contents" data-aos="fade-up">
         <p>
           初めまして、WebエンジニアのMITSUAKIと申します。<br>
           現在フロントエンドを中心に、Webサイト制作およびWebアプリケーションの開発を行なっております。<br>
@@ -73,17 +73,17 @@
     </section>
 
 
-        <!-- サービス -->
+    <!-- サービス -->
     <section id="service">
 
-      <div class="title">
+      <div class="title"data-aos="fade-up">
         <h2>Service</h2>
         <p>-サービス-</p>
       </div>
 
       <div class="rec">
-        <!-- 一つ目 -->
-        <div class="rec-item">
+
+        <div class="rec-item"data-aos="flip-right">
           <div class="text">
               <div class="sub_title">サイト制作</div>
               <div class="discription">
@@ -97,12 +97,12 @@
           </div>
         </div>
 
-        <!-- ふたつ目 -->
-        <div class="rec-item">
+
+        <div class="rec-item"data-aos="flip-right">
           <div class="text">
               <div class="sub_title">SNSサポート</div>
               <div class="discription">
-                SNS広告代理店にて培ったスキルにてお手伝いいたします。<br>
+                SNS広告代理店にて培ったスキルにてお手伝い致します。<br>
                 データ分析やショップ機能の代行を行います<br>
                 単発〜定期的なアドバイスなどリーズナブルに対応いたします。
               </div>
@@ -112,8 +112,8 @@
           </div>
         </div>
 
-        <!-- みっつ目 -->
-        <div class="rec-item">
+
+        <div class="rec-item"data-aos="flip-right">
           <div class="text">
               <div class="sub_title">サポート対応</div>
               <div class="discription">
@@ -130,17 +130,17 @@
      </div>
     </section>
 
-    <!-- 実績と制作物 -->
+    <!-- 実績 -->
     <section id="works">
-      <div class="title">
+      <div class="title"data-aos="fade-up" >
         <h2>Works</h2>
         <p>-実績/作成物-</p>
       </div>
 
       <div class="rec">
       
-        <!-- ふたつ目 -->
-        <div class="rec-item">
+ 
+        <div class="rec-item"data-aos="flip-right">
          
             <div class="text">
               <div class="sub_title">サンプルサイト①
@@ -153,8 +153,8 @@
             </div>
         </div>
 
-        <!-- みっつ目 -->
-        <div class="rec-item">
+  
+        <div class="rec-item"data-aos="flip-right">
         
             <div class="text">
               <div class="sub_title">サンプルサイト②
@@ -168,7 +168,7 @@
         </div>
 
       
-        <div class="rec-item">
+        <div class="rec-item"data-aos="flip-right">
           
             <div class="text">
               <div class="sub_title">オリジナルサイト</div>
@@ -186,58 +186,54 @@
     </section>
     
     <section id="price">
-
       <div class="c-inner">
 
-      <div class="title">
-        <h2>Price</h2>
-        <p>-価格表-</p>
-      </div>
-
-      <div class="contents">
-    
-          <div class="price-image">
-            <img src="./image/price.jpg" alt="価格イメージ">
+          <div class="title"data-aos="fade-up">
+            <h2>Price</h2>
+            <p>-価格表-</p>
           </div>
 
-          <div class="price-contents">
-            <div class="price-item">
-              <h3>コーディング代行</h3>
-              <p>¥20,000-</p>
-            </div>
-            <div class="price-item">
-              <h3>LP制作</h3>
-              <p>¥50,000-</p>
-            </div>
-            <div class="price-item">
-              <h3>SNS運用サポート</h3>
-              <p>¥10,000-</p>
-            </div>
-            <div class="price-item">
-              <h3>その他</h3>
-              <p>-要相談-</p>
-            </div>
-            <div class="link">
-              <a href="#">無料相談/ご依頼など</a>
-            </div>
+          <div class="contents"data-aos="fade-up">
+        
+              <div class="price-image">
+                <img src="./image/price.jpg" alt="価格イメージ">
+              </div>
+
+              <div class="price-contents">
+                <div class="price-item">
+                  <h3>コーディング代行</h3>
+                  <p>¥20,000-</p>
+                </div>
+                <div class="price-item">
+                  <h3>LP制作</h3>
+                  <p>¥50,000-</p>
+                </div>
+                <div class="price-item">
+                  <h3>SNS運用サポート</h3>
+                  <p>¥10,000-</p>
+                </div>
+                <div class="price-item">
+                  <h3>その他</h3>
+                  <p>-要相談-</p>
+                </div>
+                <div class="link">
+                  <a href="#">無料相談/ご依頼など</a>
+                </div>
+              </div>
+        
           </div>
-          
-        </div>
 
-        </div>
-
-        
-        
+      </div>        
     </section>
     
     <!-- 制作の流れ -->
-    <section class="flow">
-      <div class="title">
+    <section id="flow">
+      <div class="title"data-aos="fade-up">
         <h2>Flow</h2>
         <p>-制作の流れ-</p>
       </div>
 
-      <div class="flow-contents">
+      <div class="flow-contents"data-aos="fade-up">
 
         <div class="flow-item">
           <h3>STEP1<br>お問い合わせ</h3>
@@ -268,13 +264,13 @@
       </div>
     </section>
 
-    <section class="inquery">
-      <div class="inquery-text">
+    <section id="inquery">
+      <div class="inquery-text"data-aos="fade-up">
         <h2>気軽にお問合せくださいませ。</h2>
         <p>ご依頼（ご相談）は下記よりお願い致します。※無料</p>
       </div>
 
-      <div class="inquery-btn"><a href="">無料相談/ご依頼など</a></div>
+      <div class="inquery-btn"data-aos="fade-up"><a href="">無料相談/ご依頼など</a></div>
     </section>
  
   </main>
@@ -287,11 +283,11 @@
       <h1><a href="#">MITSU' s Portforfolio</a></h1>
       <nav>
         <ul>
-          <li><a href="#">自己紹介</a></li>
-          <li><a href="#">サービス</a></li>
-          <li><a href="#">価格表</a></li>
-          <li><a href="#">実績</a></li>
-          <li><a href="#">制作の流れ</a></li>
+          <li><a href="#intro">自己紹介</a></li>
+          <li><a href="#service">サービス</a></li>
+          <li><a href="#works">実績</a></li>
+          <li><a href="#price">価格表</a></li>
+          <li><a href="#flow">制作の流れ</a></li>
         </ul>
       </nav>
     </div>
@@ -300,6 +296,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

@@ -169,12 +169,15 @@ p {
 }
 
 #header-top .h-inner .i-button {
+  padding: 0;
   position: absolute;
   right: 55px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 10px;
+  color: #000;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 599px) {
@@ -187,6 +190,7 @@ p {
   display: block;
   font-weight: bold;
   color: #000;
+  background-color: #fff;
   text-decoration: none;
   font-size: 15px;
   padding: 1px;
@@ -435,12 +439,12 @@ footer p {
   font-size: 15px;
 }
 
-.intro {
+#intro {
   text-align: center;
   background-color: #EEEEEE;
 }
 
-.intro .title {
+#intro .title {
   padding-top: 60px;
   padding-bottom: 20px;
   margin-left: 20px;
@@ -448,23 +452,23 @@ footer p {
   line-height: 1.5;
 }
 
-.intro .title p {
+#intro .title p {
   padding-bottom: 20px;
 }
 
-.intro .title img {
+#intro .title img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
 }
 
-.intro .contents {
+#intro .contents {
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 60px;
 }
 
-.intro .contents p {
+#intro .contents p {
   font-size: 20px;
   line-height: 30px;
 }
@@ -604,19 +608,19 @@ p {
   opacity: 0.7;
 }
 
-.flow {
+#flow {
   text-align: center;
   background-color: #EEEEEE;
   padding-bottom: 60px;
 }
 
-.flow .title {
+#flow .title {
   padding-top: 60px;
   padding-bottom: 60px;
   line-height: 1.5;
 }
 
-.flow .flow-contents {
+#flow .flow-contents {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -629,7 +633,7 @@ p {
 }
 
 @media screen and (min-width: 599px) {
-  .flow .flow-contents {
+  #flow .flow-contents {
     -ms-grid-columns: minmax(min-content, 400px) minmax(min-content, 400px);
         grid-template-columns: minmax(-webkit-min-content, 400px) minmax(-webkit-min-content, 400px);
         grid-template-columns: minmax(min-content, 400px) minmax(min-content, 400px);
@@ -637,30 +641,30 @@ p {
 }
 
 @media screen and (min-width: 1000px) {
-  .flow .flow-contents {
+  #flow .flow-contents {
     -ms-grid-columns: minmax(min-content, 400px) minmax(min-content, 400px) minmax(min-content, 400px) minmax(min-content, 400px);
         grid-template-columns: minmax(-webkit-min-content, 400px) minmax(-webkit-min-content, 400px) minmax(-webkit-min-content, 400px) minmax(-webkit-min-content, 400px);
         grid-template-columns: minmax(min-content, 400px) minmax(min-content, 400px) minmax(min-content, 400px) minmax(min-content, 400px);
   }
 }
 
-.flow .flow-item {
+#flow .flow-item {
   text-align: center;
   padding: 20px;
 }
 
-.flow .flow-item h3 {
+#flow .flow-item h3 {
   font-size: 25px;
   padding-bottom: 20px;
   line-height: 1.5em;
   text-align: center;
 }
 
-.flow .flow-item .f-discription {
+#flow .flow-item .f-discription {
   text-align: center;
 }
 
-.inquery {
+#inquery {
   background-color: #F9CDD7;
   color: white;
   text-align: center;
@@ -668,37 +672,37 @@ p {
   padding-bottom: 80px;
 }
 
-.inquery .inquery-text {
+#inquery .inquery-text {
   line-height: 1.5;
 }
 
-.inquery .inquery-text > h2 {
+#inquery .inquery-text > h2 {
   font-size: 25px;
   line-height: 30px;
 }
 
 @media screen and (min-width: 599px) {
-  .inquery .inquery-text > h2 {
+  #inquery .inquery-text > h2 {
     font-size: 40px;
   }
 }
 
-.inquery .inquery-text > p {
+#inquery .inquery-text > p {
   font-size: 20px;
 }
 
 @media screen and (min-width: 599px) {
-  .inquery .inquery-text > p {
+  #inquery .inquery-text > p {
     font-size: 30px;
   }
 }
 
-.inquery .inquery-btn {
+#inquery .inquery-btn {
   display: inline-block;
   margin-top: 40px;
 }
 
-.inquery .inquery-btn a {
+#inquery .inquery-btn a {
   display: block;
   background-color: #f7b019;
   border-radius: 40px;
@@ -710,12 +714,12 @@ p {
 }
 
 @media screen and (min-width: 599px) {
-  .inquery .inquery-btn a {
+  #inquery .inquery-btn a {
     font-size: 30px;
   }
 }
 
-.inquery .inquery-btn a:hover {
+#inquery .inquery-btn a:hover {
   opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
