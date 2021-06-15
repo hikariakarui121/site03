@@ -158,8 +158,7 @@ z-index: 100;
         background-color: #fff;
         text-decoration: none;
         font-size: 15px;
-        padding-right: 2px;
-        padding-left: 2px;
+        padding: 0px 4px;
 
         @include smallTab{
           font-size: 20px;
