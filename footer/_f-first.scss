@@ -1,0 +1,41 @@
+footer{
+  text-align: center;
+
+  #f-first{
+    
+    padding:60px 0px;
+    background-color: #313131;
+
+    .f-inner{
+      max-width: 1500px;
+      width: 100%;
+      margin: 0 auto;
+      .title{
+      
+
+        h3{
+          color: white;
+          font-size: 30px;
+          padding-bottom: 30px;
+        
+        }
+      }
+        .ff-contents{
+  
+          &>p{
+            font-size: 22px;
+            line-height: 35px;
+            padding: 0;
+            color: white;
+          }
+        }
+  
+      
+
+
+    }
+
+    
+
+  }//section
+}

@@ -22,3 +22,22 @@ AOS.init({
   duration: 800,
   once: true,
 })
+
+//スライダー
+const swiper = new Swiper('.swiper-container', {
+  
+  slidesPerView: 1,
+  spaceBetween: 30,
+  effect:'fade',
+  speed: 2000,
+  loop:true,
+
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: true,
+  },
+
+  
+
+  
+   });

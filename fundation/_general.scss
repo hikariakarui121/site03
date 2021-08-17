@@ -24,3 +24,8 @@ p{
     @content; 
   }
 }
+@mixin smartTab {
+  @media screen and(min-width:400px){
+    @content; 
+  }
+}

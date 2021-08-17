@@ -8,23 +8,38 @@ z-index: 100;
   .h-inner{
     color:white;
     background-color: black;
-    height: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   
-  
-    h1{
-      display: inline-block;
-      font-size: 18px;
-      line-height: 80px;
+   .h-title{
+     display: flex;
+     flex-direction: column;
+    //  line-height: 80px;
 
+     h1{
+       display: inline-block;
+       font-size: 20px;
+       line-height: 32px;
+      
+ 
+       @include smallTab{
+         font-size: 28px;
+         line-height: 45px;
+       }
+     }
+
+     p{
+      
+      font-size: 14px;
       @include smallTab{
-        font-size: 30px;
+        font-size: 16px;
       }
-    }
+     }
+   }
   
     nav{
       display: none;
@@ -32,7 +47,7 @@ z-index: 100;
       &.-active{
         display: block;
         position: fixed;
-        top: 80px;
+        top: 100px;
         left:0;
         width: 100%;
         background-color:rgba(#000,0.7);
@@ -42,9 +57,8 @@ z-index: 100;
         position: static;
         width: initial;
         background-color: transparent;
-
         display:flex;
-        padding-right: 150px;
+
       }
       
       li{
@@ -59,10 +73,15 @@ z-index: 100;
           text-decoration: none;
           display: block;
           font-size: 16px;
-          line-height: 80px;
+          padding:20px 0px;
+          
 
           @include smallTab{
             font-size: 18px;
+          }
+
+          @include OverTab{
+            line-height: 80px;
           }
   
           &:hover{
@@ -85,7 +104,7 @@ z-index: 100;
       border: none;
       background-color: transparent;
 
-      @include smallTab{
+      @include OverTab{
         display: none;
       }
 
@@ -135,77 +154,6 @@ z-index: 100;
     }
 
 
-
-    // 問い合わせボタン
-    .i-button{
-      padding: 0;
-      position: absolute;
-      right:55px;
-      top:50%;
-      transform: translateY(-50%);
-      color:#000;
-      background-color: #fff;
-      
-      @include smallTab{
-        right:20px;
-      }
-
-      a{
-        display: block;
-        font-weight: bold;
-        color:#000;
-        background-color: #fff;
-        text-decoration: none;
-        font-size: 15px;
-        padding: 0px 4px;
-
-        @include smallTab{
-          font-size: 20px;
-          padding:4px;
-
-        }
-      }
-
-    }
-
-
   }
 }
 
-
-#c_copy{
-
-  background:url("./image/top01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  padding-top: 80px;
-  
-  @include smallTab{
-    height: 500px;
-  }
-
-  & div{
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
-  h2{
-    color: white;
-    text-shadow: -3px -1px black;
-   font-size: 22px;
-    width: 100%;
-
-    @include smallTab{
-      font-size: 28px;
-    }
-  }
-}

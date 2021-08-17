@@ -8,11 +8,23 @@
   <link rel="shortcut icon" type="image/x-icon" href="./image/favicon001.ico" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>Mitsu's Portfolio | 事業制作サイト</title>
+  <title>Think of the CODE | 事業制作サイト</title>
   <meta name="discription" content="
   Webサイト構築（HPなど）・LP制作でお困りではありませんか？HTML/CSS/JavaScript/WordPressなどのコーディングが可能です。スピード&質を重視した上で期待以上のクオリティーを提供いたします。"> 
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GT6D8KC264"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GT6D8KC264');
+</script>
+
   
 </head>
 
@@ -22,16 +34,21 @@
     <section id ="header-top">
       <div class="h-inner">
             
-            <h1>MITSU' s Portfolio</h1>
+        <div class="h-title">
+          <h1>Think of the CODE</h1>
+          <p>ホームページ制作からSNSコンサルまで</p>
+        </div>
             
 
             <nav id="nav">
               <ul>
-                <li><a href="#intro">自己紹介</a></li>
+                <li><a href="#concept">Concept</a></li>
                 <li><a href="#service">サービス</a></li>
                 <li><a href="#works">実績</a></li>
+                <li><a href="#choice">選ばれる理由</a></li>
                 <li><a href="#price">価格表</a></li>
                 <li><a href="#flow">制作の流れ</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSelSjMB2dqAeLuGJLpA_TGXtYsUhx8xGXVNL9FU60RoCpd-Ow/viewform?usp=sf_link">お問い合わせ</a></li>
               </ul>
             </nav>
 
@@ -41,15 +58,27 @@
               <span></span>
             </button>
 
-            <button class="i-button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSelSjMB2dqAeLuGJLpA_TGXtYsUhx8xGXVNL9FU60RoCpd-Ow/viewform?usp=sf_link">問い合わせ</a></button>
+            
 
-          </div>
+      </div>
     </section>
 
     <!-- トップ部分 -->
     <section id="c_copy">
-      <div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="./image/top01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/top2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/top03.jpg" alt=""></div>
+
+        </div>
+      </div>
+
+      <div class="top-text">
         <h2>Webサイト構築・LP制作でお困りではありませんか？</h2>
+
+        <button class="i-button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSelSjMB2dqAeLuGJLpA_TGXtYsUhx8xGXVNL9FU60RoCpd-Ow/viewform?usp=sf_link">問い合わせ</a></button>
       </div>
     </section>
 
@@ -57,24 +86,36 @@
     
   <main>
 
-    <!-- 自己紹介 -->
-    <section id="intro">
-      <div class="title">
-        <h2>Introduction</h2>
-        <p>-自己紹介-</p>
-        <img src="image/image001.jpeg" alt="">
+    <!-- コンセプト -->
+   <section id="concept">
+
+    <div class="inner">
+
+      <div class="title"data-aos="fade-up">
+        <h2>Concept</h2>
+        <p>-Webサイト制作からマーケディングまで-</p>
       </div>
 
-      <div class="contents" data-aos="fade-up">
-        <p>
-          初めまして、WebエンジニアのMITSUAKIと申します。<br>
-          現在フロントエンドを中心に、Webサイト制作およびWebアプリケーションの開発を行なっております。<br>
-          「質」と「スピード」を重視することで、期待以上のものを提供させていただきます。<br>
-          また、クライアント様に寄り添った丁寧なコミュニケーションを常に心がけ、 最後まで責任を持って、仕事に取り組ませていただきます。
-        </p>
-      </div>
-    </section>
+      <div class="con-contents" data-aos="fade-up">
 
+
+        <div class="con-image">
+          <img src="./image/list-1143031_640.jpg" alt="">
+        </div>
+
+        <div class="con-item">
+          <h4>集客まで考えたサイト作りをお考えの方へ</h4>
+          <p>サイト作りの目的は、お客様同線の入り口を増やすことや囲い込みなどが多いかと思います。<br>
+          そのため、ただ作品を納品するだけではなく、用途や目的に合わせたホームページ制作を行い、必要に応じて相談して完成物を納品することを心掛けています。また、SNSの活用方法など総合的に目的を達成できるサイト作りをすることで目的を達成するサポートを行っております。
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+   </section>
 
     <!-- サービス -->
     <section id="service">
@@ -90,9 +131,9 @@
           <div class="text">
               <div class="sub_title">サイト制作</div>
               <div class="discription">
-                スピードかつクオリティー重視で対応いたします。<br>
+                スピードかつクオリティー重視で対応致します。<br>
                 LP制作や、サイト制作をさせていただきます。<br>
-                寄り添ったコミュニケーションをさせていただきます。
+                寄り添った会話を心掛けております。
               </div>
           </div>
           <div class="image">
@@ -174,11 +215,11 @@
         <div class="rec-item"data-aos="flip-right">
           
             <div class="text">
-              <div class="sub_title">オリジナルサイト</div>
+              <div class="sub_title">ワードプレスサイト※デザインデータより作成</div>
             
           </div>
           <div class="image">
-            <a href="https://hikariakarui121.github.io/site03/">
+            <a href="https://www.mitsuaki-blog.com">
               <img src="./image/contents03.jpg" alt="サイト制作画像">
             </a>
           </div>
@@ -186,8 +227,116 @@
     
      </div>
     </section>
-    </section>
+
+    <section id="choice">
+
+      <div class="inner">
+
+
+        <div class="title"data-aos="fade-up">
+          <h2>CHOICE</h2>
+          <p>-選ばれる理由-</p>
+        </div>
+  
+        <div class="ch-contents" data-aos="fade-up">
+  
+          <div class="ch-items">
+
+            <div class="ch-image">
+              <img src="./image/green-chameleon-s9CC2SKySJM-unsplash.jpg" alt="">
+            </div>
+            <div class="ch-text">
+              <span>01</span>
+              <h3>【 低価格、高品質 】</h3>
+              <p>コストパフォーマンスを重視し納品まで責任をもち担当いたします</p>
+            </div>
+
+          </div>
     
+          <div class="ch-items">
+
+            <div class="ch-image">
+              <img src="./image/eli-francis-_M-DrbiNFa4-unsplash.jpg" alt="">
+            </div>
+            <div class="ch-text second">
+              <span>02</span>
+              <h3>【 幅広い対応力 】</h3>
+              <p>広告代理店にてSNSコンサルを行っていた経験があるため、
+                WEBサイト・ECサイト・LP各種の制作以外にも
+                WEBマーケティング(SNS運用など）も対応することができます。</p>
+            </div>
+              
+           
+          </div>
+  
+          <div class="ch-items">
+            <div class="ch-image">
+              <img src="./image/paper-3213924_640.jpg" alt="">
+            </div>
+            <div class="ch-text">
+              <span>03</span>
+              <h3> 【 迅速丁寧な対応、サポート力 】</h3>
+              <p>Web知識が無い方にも安心いただけるよう迅速丁寧な説明を心がけています。</p>
+            </div>
+          </div>
+  
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="intro">
+
+      <div class="title">
+        <h2>Introduction</h2>
+        <p>-自己紹介-</p>
+      </div>
+
+      <div class="intro-contents" data-aos="fade-up">
+
+        <div class="intro-image">
+          <img src="image/image001.jpeg" alt="">
+        </div>
+        
+        <div class="in-items">
+
+          <div class="intro-item">
+            <p>
+              初めまして、WEB制作エンジニアの山本と申します。<br>
+              現在フロントエンドを中心に、Webサイト制作およびWebアプリケーションの開発を行なっております。<br>
+              「質」と「スピード」を重視することで、期待以上のものを提供させていただきます。<br>
+              また、クライアント様に寄り添った丁寧なコミュニケーションを常に心がけ、<br>最後まで責任を持って、仕事に取り組ませていただきます。
+            </p>
+          </div>
+          <div class="intro-item">
+            <p>
+              ■経歴■<br>
+                −リクルートライフスタイルにて、美容関連会社や個人サロンへ、ホットペッパーの企画・コンサル営業<br>
+                −Web広告代理店（サイバー・バズ）にて、特にSNS領域をメインに企画営業に従事。<br>
+                −現在は、WEB制作会社様とパートナーで、コーディングやデザイン案件に従事しております。
+            </p>
+          </div>
+          <div class="intro-item">
+            <p>
+              ■スキル■<br>
+                ★★★ HTML/CSS/JS/WordPress<br>
+                ★★ Photoshop・Illustrator対応<br>
+                ★★★ SNSコンサル<br>
+                ★★ Webマーケティング
+            </p>
+          </div>
+  
+
+
+        </div>
+
+      </div>
+      
+    </section>
+
+ 
+
     <section id="price">
       <div class="c-inner">
 
@@ -205,18 +354,18 @@
               <div class="price-contents">
                 <div class="price-item">
                   <h3>コーディング代行</h3>
-                  <p>¥30,000~</p>
+                  <p>¥20,000~</p>
                 </div>
                 <div class="price-item">
                   <h3>LP制作</h3>
-                  <p>¥50,000~</p>
+                  <p>¥20,000~</p>
                 </div>
                 <div class="price-item">
-                  <h3>コーポレートサイト</h3>
-                  <p>¥100,000~</p>
+                  <h3>ワードプレスサイト</h3>
+                  <p>¥30,000~</p>
                 </div>
                 <div class="price-item">
-                  <h3>SNS運用サポート</h3>
+                  <h3>SNSコンサル</h3>
                   <p>¥10,000~</p>
                 </div>
                 <div class="price-item">
@@ -286,24 +435,56 @@
 
   <footer>
 
-    <div class="footer-top">
-      <h1><a href="#">MITSU' s Portfolio</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#intro">自己紹介</a></li>
-          <li><a href="#service">サービス</a></li>
-          <li><a href="#works">実績</a></li>
-          <li><a href="#price">価格表</a></li>
-          <li><a href="#flow">制作の流れ</a></li>
-        </ul>
-      </nav>
-    </div>
+    <section id="f-first">
+      
+      <div class="f-inner" data-aos="fade-up">
 
-    <p><small>©︎2020 Mitsu's Portfolio</small></p>
+        <div class="title">
+          <h3>Think of the CODE</h3>
+        </div>
+  
+        <div class="ff-contents">
+  
+          <p>
+            屋号：Think of the CODE<br>
+            電話番号：080-9350-2511<br>
+            営業時間：10：00〜20：00<br>
+            事務所：大阪府吹田市南吹田4-2-1 ラフォーレ1F
+          </p>
+        
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+    <section id="f-second">
+
+      <div class="footer-top">
+     
+          <ul>
+            <li><a href="#intro">自己紹介</a></li>
+            <li><a href="#service">サービス</a></li>
+            <li><a href="#works">実績</a></li>
+            <li><a href="#price">価格表</a></li>
+            <li><a href="#flow">制作の流れ</a></li>
+          </ul>
+       
+      </div>
+
+    </section>
+
+    <section id="f-third">
+      <p>©︎2020 Think of the CODE</p>
+    </section>
+
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

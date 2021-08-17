@@ -19,9 +19,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px;
+    flex-wrap: wrap;
+
+    @include OverTab{
+      flex-wrap: nowrap;
+    }
 
     .rec-item {
       display: flex;
@@ -33,14 +37,15 @@
 
         & + .rec-item{
 
-          @include OverTab{
+          @media screen and (min-width:840px) {
             margin-left: 30px;
-
           }
+      
         }
 
         .text{
           border: 1px solid #d8d7d7;
+          height: 160px;
       
           .sub_title{
             padding: 20px;

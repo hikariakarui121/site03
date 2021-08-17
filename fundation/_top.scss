@@ -1,0 +1,98 @@
+
+#c_copy{
+  position: relative;
+  z-index: 1;
+  // padding-top: 100px;
+
+  .swiper-container {
+    width: 100%;
+    min-height: 400px;
+    // height: 650px;
+    // object-fit: cover;
+   
+
+    img{
+      width: 100%;
+      height: auto;
+      min-height: 400px;
+      // object-position: bottom;
+    }
+
+  }
+    
+.top-text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+
+  h2{
+    color: white;
+    text-shadow: -3px -1px black;
+    font-size: 22px;
+    line-height: 35px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    
+
+    @include smallTab{
+      font-size: 28px;
+      line-height: 50px;
+      margin-bottom: 40px;
+     
+    }
+   
+
+    @include midTab{
+      font-size: 32px;
+      white-space: nowrap;
+
+    }
+  }
+
+  // 問い合わせボタン
+  .i-button{
+    
+    appearance: none;
+    outline: none;
+    font:inherit;
+    border: none;
+    background-color: transparent;
+
+    a{
+      display: block;
+      font-weight: bold;
+      color:#000;
+      background-color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 15px 30px;
+      border-radius: 5px;
+    
+    }
+
+  }//i-bottun
+
+
+}
+
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.swiper-slide-active img,
+.swiper-slide-duplicate-active img,
+.swiper-slide-prev img{
+  animation: zoomUp 10s linear 0s 1 normal both;  
+}
