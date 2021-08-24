@@ -41,15 +41,16 @@ const swiper = new Swiper('.swiper', {
 
 
 const slider1 = new Swiper('.slider1', {
-  centeredSlides:true,
   slidesPerView: 1,
   spaceBetween:30,
+  // slidesOffsetBefore: 30,
+  centeredSlides:true,
+  // speed:5000,
+  loopAdditionalSlides:10,
   loop:true,
-  
-
   autoplay: {
-    delay: 5000,
-
+    delay: 3000,
+    disableOnInteraction: true,
   },
 
   breakpoints: {
@@ -60,7 +61,10 @@ const slider1 = new Swiper('.slider1', {
       slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 2.5,
+      slidesPerView: 3,
+    },
+    1500: {
+      slidesPerView: 4,
     },
 }
 
