@@ -1,9 +1,6 @@
-h2 {
-  font-size: 30px;
-}
-
-p {
-  font-size: 18px;
+main {
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2 {
@@ -12,6 +9,29 @@ h2 {
 
 p {
   font-size: 18px;
+}
+
+.font-red {
+  font-weight: bold;
+  color: rgba(209, 45, 45, 0.994);
+}
+
+main {
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.font-red {
+  font-weight: bold;
+  color: rgba(209, 45, 45, 0.994);
 }
 
 #header-top {
@@ -200,29 +220,21 @@ p {
   background-color: #EEEEEE;
 }
 
+#works .inner {
+  padding: 0px 20px;
+}
+
 #works .title {
   padding-top: 60px;
   padding-bottom: 60px;
   line-height: 1.5;
 }
 
-#works .rec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
+#works .swiper-container {
+  width: 100%;
 }
 
-#works .rec .rec-item {
+#works .swiper-container .rec.swiper-wrapper .rec-item.swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,28 +249,22 @@ p {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1000px) {
-  #works .rec .rec-item + .rec-item {
-    margin-left: 30px;
-  }
-}
-
-#works .rec .rec-item .text {
+#works .swiper-container .rec.swiper-wrapper .rec-item.swiper-slide .text {
   color: #EEEEEE;
   text-align: center;
 }
 
-#works .rec .rec-item .text .sub_title {
+#works .swiper-container .rec.swiper-wrapper .rec-item.swiper-slide .text .sub_title {
   font-size: 16px;
   font-weight: bold;
   line-height: 30px;
 }
 
-#works .rec .rec-item .image:hover {
+#works .swiper-container .rec.swiper-wrapper .rec-item.swiper-slide .image:hover {
   opacity: 0.5;
 }
 
-#works .rec .rec-item .image img {
+#works .swiper-container .rec.swiper-wrapper .rec-item.swiper-slide .image img {
   max-width: 400px;
   width: 100%;
   height: auto;
@@ -321,23 +327,61 @@ p {
 #service .rec .rec-item .text {
   border: 1px solid #d8d7d7;
   height: 160px;
+  padding: 20px;
 }
 
 #service .rec .rec-item .text .sub_title {
-  padding: 20px;
+  padding-bottom: 20px;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 #service .rec .rec-item .text .discription {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 50px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.75em;
 }
 
 #service .rec .rec-item .image img {
   max-width: 400px;
   width: 100%;
   height: auto;
+}
+
+#value .inner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 0px;
+}
+
+#value .inner .title {
+  padding-bottom: 60px;
+}
+
+#value .inner .title h2 {
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+#value .inner .title p {
+  line-height: 2em;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  #value .inner .title p {
+    font-size: 1.25rem;
+  }
+}
+
+#value .inner .v-item {
+  text-align: center;
+}
+
+#value .inner .v-item img {
+  width: 100%;
 }
 
 #intro {
@@ -413,12 +457,22 @@ p {
   padding-bottom: 50px;
 }
 
+main {
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 h2 {
   font-size: 30px;
 }
 
 p {
   font-size: 18px;
+}
+
+.font-red {
+  font-weight: bold;
+  color: rgba(209, 45, 45, 0.994);
 }
 
 #price {
@@ -429,6 +483,7 @@ p {
 #price .c-inner {
   max-width: 1180px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 #price .c-inner .title {
@@ -437,11 +492,28 @@ p {
   line-height: 1.5;
 }
 
+#price .c-inner .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media screen and (min-width: 1000px) {
   #price .c-inner .contents {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -451,6 +523,10 @@ p {
   }
 }
 
+#price .c-inner .contents .price-image {
+  text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
   #price .c-inner .contents .price-image {
     margin-right: 60px;
@@ -458,9 +534,10 @@ p {
 }
 
 #price .c-inner .contents .price-image img {
+  text-align: center;
   max-width: 500px;
-  width: 95%;
   height: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 599px) {
@@ -470,15 +547,18 @@ p {
 }
 
 #price .c-inner .contents .price-contents {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   padding-top: 20px;
+  padding: 0 15px;
+  max-width: 500px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1000px) {
   #price .c-inner .contents .price-contents {
     padding-top: 0px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
@@ -486,9 +566,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -496,12 +576,7 @@ p {
 
 @media screen and (min-width: 1000px) {
   #price .c-inner .contents .price-contents .price-item {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     line-height: 2.5em;
-    padding-right: 20px;
-    padding-left: 20px;
   }
 }
 
@@ -514,17 +589,18 @@ p {
 
 @media screen and (min-width: 599px) {
   #price .c-inner .contents .price-contents .price-item h3 {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
 }
 
 #price .c-inner .contents .price-contents .price-item p {
-  font-size: 18px;
+  white-space: nowrap;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 599px) {
   #price .c-inner .contents .price-contents .price-item p {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 }
 
@@ -673,15 +749,18 @@ p {
   z-index: 1;
 }
 
-#c_copy .swiper-container {
-  width: 100%;
-  min-height: 400px;
-}
-
 #c_copy .swiper-container img {
   width: 100%;
-  height: auto;
-  min-height: 400px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+  #c_copy .swiper-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #c_copy .top-text {
@@ -762,9 +841,9 @@ p {
   }
 }
 
-.swiper-slide-active img,
-.swiper-slide-duplicate-active img,
-.swiper-slide-prev img {
+#c_copy .swiper-slide-active img,
+#c_copy .swiper-slide-duplicate-active img,
+#c_copy .swiper-slide-prev img {
   -webkit-animation: zoomUp 10s linear 0s 1 normal both;
           animation: zoomUp 10s linear 0s 1 normal both;
 }
@@ -792,14 +871,14 @@ p {
 }
 
 #concept .inner .title p {
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.5em;
 }
 
 @media screen and (min-width: 400px) {
   #concept .inner .title p {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 1.25rem;
+    line-height: 2em;
   }
 }
 
@@ -856,8 +935,14 @@ p {
 
 #concept .inner .con-contents .con-item p {
   padding-top: 15px;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 599px) {
+  #concept .inner .con-contents .con-item p {
+    font-size: 1.25rem;
+  }
 }
 
 #choice {
@@ -866,7 +951,7 @@ p {
 }
 
 #choice .inner {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -877,34 +962,51 @@ p {
 }
 
 #choice .title h2 {
-  font-size: 30px;
+  font-size: 2rem;
   line-height: 40px;
 }
 
 #choice .title p {
-  font-size: 24px;
-  line-height: 40px;
+  line-height: 2em;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  #choice .title p {
+    font-size: 1.25rem;
+  }
+}
+
+#choice .ch-contents {
+  width: 100%;
 }
 
 #choice .ch-contents .ch-items {
-  position: relative;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 50px;
 }
 
 @media screen and (min-width: 800px) {
   #choice .ch-contents .ch-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    text-align: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    text-align: left;
-    padding-bottom: 150px;
   }
-  #choice .ch-contents .ch-items:nth-child(2) {
+  #choice .ch-contents .ch-items.second-items {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -912,70 +1014,84 @@ p {
   }
 }
 
+#choice .ch-contents .ch-items .ch-image {
+  width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+  #choice .ch-contents .ch-items .ch-image {
+    width: 50%;
+  }
+}
+
 #choice .ch-contents .ch-items .ch-image img {
-  max-width: 500px;
+  vertical-align: center;
   width: 100%;
   height: auto;
+  opacity: 0.7;
 }
 
 #choice .ch-contents .ch-items .ch-text {
-  background-color: #fff;
-  display: inline-block;
-  height: 330px;
-  max-width: 500px;
-  width: 100%;
-  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #fff;
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
           box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
+  width: 80%;
 }
 
 @media screen and (min-width: 800px) {
   #choice .ch-contents .ch-items .ch-text {
-    position: absolute;
-    top: 90px;
-    right: 0;
+    width: 50%;
+    max-width: 500px;
+    height: 330px;
   }
 }
 
-#choice .ch-contents .ch-items .ch-text.second {
-  left: 0;
-}
-
 #choice .ch-contents .ch-items .ch-text span {
+  text-align: center;
   display: inline-block;
-  font-size: 30px;
+  font-size: 3.5rem;
 }
 
 @media screen and (min-width: 800px) {
   #choice .ch-contents .ch-items .ch-text span {
-    font-size: 45px;
+    text-align: left;
   }
 }
 
 #choice .ch-contents .ch-items .ch-text h3 {
-  padding: 20px 0;
-  font-size: 24px;
-  line-height: 35px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 1.25rem;
+  line-height: 1.5em;
 }
 
 @media screen and (min-width: 800px) {
   #choice .ch-contents .ch-items .ch-text h3 {
-    padding: 30px 0;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 1.5rem;
+    line-height: 2em;
   }
 }
 
 #choice .ch-contents .ch-items .ch-text p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 0.9rem;
+  line-height: 1.5em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 400px) {
   #choice .ch-contents .ch-items .ch-text p {
-    font-size: 22px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #choice .ch-contents .ch-items .ch-text p {
+    font-size: 1.1rem;
   }
 }
 
@@ -1048,9 +1164,10 @@ footer #f-first {
 }
 
 footer #f-first .f-inner {
-  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
+  max-width: 1000px;
 }
 
 footer #f-first .f-inner .title h3 {
@@ -1060,9 +1177,16 @@ footer #f-first .f-inner .title h3 {
 }
 
 footer #f-first .f-inner .ff-contents > p {
-  font-size: 22px;
-  line-height: 35px;
+  font-size: 1rem;
+  line-height: 1.75em;
   padding: 0;
   color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  footer #f-first .f-inner .ff-contents > p {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

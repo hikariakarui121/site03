@@ -24,7 +24,7 @@ AOS.init({
 })
 
 //スライダー
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
   
   slidesPerView: 1,
   spaceBetween: 30,
@@ -37,7 +37,33 @@ const swiper = new Swiper('.swiper-container', {
     disableOnInteraction: true,
   },
 
+});
+
+
+const slider1 = new Swiper('.slider1', {
+  centeredSlides:true,
+  slidesPerView: 1,
+  spaceBetween:30,
+  loop:true,
   
 
-  
-   });
+  autoplay: {
+    delay: 5000,
+
+  },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 1.5,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2.5,
+    },
+}
+
+});
+
+   

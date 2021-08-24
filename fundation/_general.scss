@@ -1,3 +1,8 @@
+main{
+  font-size:16px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 h2{
   font-size:30px;
 }
@@ -5,6 +10,12 @@ h2{
 p{
   font-size:18px
 }
+
+.font-red{
+  font-weight: bold;
+  color: rgba(209, 45, 45, 0.994);
+}
+
 
 
 @mixin OverTab {

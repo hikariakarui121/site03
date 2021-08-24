@@ -5,6 +5,10 @@
   padding-bottom:60px;
   background-color:#EEEEEE;
 
+  .inner{
+    padding: 0px 20px;
+  }
+
   .title{
     padding-top:60px;
     padding-bottom:60px;
@@ -19,70 +23,78 @@
 
     }
 
+  }//title
+
+  .swiper-container{
+    width: 100%;
+
+    .rec.swiper-wrapper{
+     
+  
+     
+      .rec-item.swiper-slide{
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: #000;
+        border-radius: 8px;
+        max-width:400px;
+        width: 100%;
+        margin-top: 30px;
+
+  
+        
+          & + .rec-item{
+  
+            @include OverTab{
+              // margin-left: 30px;
+  
+            }
+  
+            
+          }
+  
+          .text{
+  
+            color: #EEEEEE;
+            text-align: center;
+        
+            .sub_title{
+             font-size: 16px;
+             font-weight: bold;
+             line-height: 30px;
+  
+             
+            }
+  
+  
+          }
+  
+          .image{
+           
+            &:hover{
+            
+              opacity :0.5;
+            }
+  
+            img{
+              
+              max-width:400px;
+              width: 100%;
+              height: auto;
+            }
+          }
+  
+      } //rec-item
+    } // rec
+
+
+
+
+
+
   }
   
-  .rec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
-
-   
-    .rec-item {
-      display: flex;
-      flex-flow: column-reverse;
-      background-color: #000;
-      border-radius: 8px;
-      max-width:400px;
-      width: 100%;
-      margin-top: 30px;
-
-      
-        & + .rec-item{
-
-          @include OverTab{
-            margin-left: 30px;
-
-          }
-
-          
-        }
-
-        .text{
-
-          color: #EEEEEE;
-          text-align: center;
-      
-          .sub_title{
-           font-size: 16px;
-           font-weight: bold;
-           line-height: 30px;
-
-           
-          }
-
-
-        }
-
-        .image{
-         
-          &:hover{
-          
-            opacity :0.5;
-          }
-
-          img{
-            
-            max-width:400px;
-            width: 100%;
-            height: auto;
-          }
-        }
-
-    } //rec-item
-  } // rec
+  
 } // service
 
 

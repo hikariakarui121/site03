@@ -7,9 +7,13 @@ footer{
     background-color: #313131;
 
     .f-inner{
-      max-width: 1500px;
+     
       width: 100%;
       margin: 0 auto;
+      text-align: center;
+      max-width: 1000px;
+
+
       .title{
       
 
@@ -21,12 +25,17 @@ footer{
         }
       }
         .ff-contents{
-  
+        
           &>p{
-            font-size: 22px;
-            line-height: 35px;
+            font-size: 1rem;
+            line-height: 1.75em;
             padding: 0;
             color: white;
+            text-align: center;
+
+            @include midTab{
+              font-size: 1.25rem;
+            }
           }
         }
   

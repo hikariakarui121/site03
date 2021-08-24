@@ -20,13 +20,13 @@
       }
 
       p{
-        font-size: 16px;
-        // font-weight: bold;
-        line-height: 30px;
+        font-size: 1rem;
+        line-height: 1.5em;
 
         @include smartTab{
-          font-size: 24px;
-          line-height: 40px;
+          font-size: 1.25rem;
+          line-height: 2em;
+
         }
       }
     }//title
@@ -75,8 +75,14 @@
 
         p{
           padding-top: 15px;
-          font-size: 22px;
-          line-height: 32px;
+          font-size: 1rem;
+          line-height: 2em;
+
+          @include smallTab{
+            font-size: 1.25rem;
+            // line-height: 2em;
+          }
+    
         }
       }//con-item
 

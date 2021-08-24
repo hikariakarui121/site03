@@ -8,6 +8,7 @@
   .c-inner{
     max-width:1180px;
     margin: 0 auto;
+    padding:0px 20px;
 
 
     .title{
@@ -17,11 +18,13 @@
     }
   
     .contents{
-      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       @include OverTab{
-
-        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
      
@@ -29,15 +32,17 @@
       }
   
       .price-image{
+        text-align: center;
 
         @include OverTab{
           margin-right: 60px;
         }
 
         img{
+          text-align: center;
           max-width: 500px;
-          width: 95%;
           height: auto;
+          width: 100%;
 
           @include smallTab{
             width: 100%;
@@ -47,22 +52,28 @@
       } //contents
   
       .price-contents{
-        flex:1;
+
         padding-top: 20px;
+        padding:0 15px;
+
+        max-width: 500px;
+        width: 100%;
+        
         @include OverTab{
           padding-top: 0px;
+           flex:1;
+
         }
         
         .price-item{
           display: flex;
-          justify-content: center;
+          justify-content:space-between;
           align-items: center;
 
            @include OverTab{
-          justify-content:space-between;
+         
           line-height: 2.5em;
-          padding-right: 20px;
-          padding-left: 20px;
+         
         
          
            }
@@ -75,16 +86,17 @@
             text-align: left;
 
             @include smallTab{
-             font-size: 30px; 
+             font-size: 1.5rem; 
             }
           }
     
           p{
-            font-size: 18px; 
+            white-space: nowrap;
+            font-size: 1rem; 
             
 
             @include smallTab{
-              font-size: 25px;
+              font-size: 1.5rem;
              }
           }
         }
