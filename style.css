@@ -232,6 +232,7 @@ p {
 
 #works .swiper-container {
   width: 100%;
+  overflow: hidden;
 }
 
 #works .swiper-container .rec.swiper-wrapper .rec-item.swiper-slide {
@@ -709,13 +710,8 @@ p {
 }
 
 #inquery .inquery-text > p {
-  font-size: 20px;
-}
-
-@media screen and (min-width: 599px) {
-  #inquery .inquery-text > p {
-    font-size: 30px;
-  }
+  font-size: 1rem;
+  line-height: 2em;
 }
 
 #inquery .inquery-btn {
@@ -732,6 +728,8 @@ p {
   color: black;
   font-weight: bold;
   font-size: 25px;
+  -webkit-box-shadow: 2px 2px 2px 1px #6d6a6a;
+          box-shadow: 2px 2px 2px 1px #6d6a6a;
 }
 
 @media screen and (min-width: 599px) {
@@ -742,6 +740,12 @@ p {
 
 #inquery .inquery-btn a:hover {
   opacity: 0.7;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(1%);
+          transform: translateY(1%);
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
 }
 
 #c_copy {
